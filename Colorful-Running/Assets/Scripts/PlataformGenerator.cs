@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlataformGeneratpr : MonoBehaviour
+public class PlataformGenerator : MonoBehaviour
 {
     public GameObject[] platformPrefabs;
     public float spawnInterval = 2f;
