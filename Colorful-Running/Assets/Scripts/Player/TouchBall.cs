@@ -34,8 +34,5 @@ public class TouchBall : MonoBehaviour
         textKM.text = "KM: " + kilometersString;
     }
 
-    private void PrintSign()
-    {
-        
-    }
+
 }

@@ -12,6 +12,7 @@ public class HomeScreen : MonoBehaviour
     {
         canvasHomeScreen.SetActive(true);
         startGame.SetActive(false);
+        Time.timeScale = 1;
     }
 
     void Update()
@@ -27,7 +28,6 @@ public class HomeScreen : MonoBehaviour
         startGame.SetActive(true);
         inGameScreen.SetActive(true);
         canvasHomeScreen.SetActive(false);
-        
     }
 
     public void CloseGame()
