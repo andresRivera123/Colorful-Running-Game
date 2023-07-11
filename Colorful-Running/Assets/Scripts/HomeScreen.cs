@@ -6,6 +6,7 @@ public class HomeScreen : MonoBehaviour
 {
     [SerializeField] private GameObject canvasHomeScreen;
     [SerializeField] private GameObject startGame;
+    [SerializeField] private GameObject inGameScreen;
 
     void Start()
     {
@@ -24,7 +25,9 @@ public class HomeScreen : MonoBehaviour
     public void StartGame()
     {
         startGame.SetActive(true);
+        inGameScreen.SetActive(true);
         canvasHomeScreen.SetActive(false);
+        
     }
 
     public void CloseGame()
