@@ -25,13 +25,17 @@ public class TouchBall : MonoBehaviour
 
     private void Update()
     {
-        distance += Time.deltaTime;
-        float kilometers = distance /10f;
-        string kilometersString = kilometers.ToString("F2");//Cifras decimales
+        if (HomeScreen.initGame)
+        {
+            distance += Time.deltaTime;
+            float kilometers = distance / 10f;
+            string kilometersString = kilometers.ToString("F2");//Cifras decimales
 
-        //Imprimir en el texto
-        textScore.text = "SCORE: " + scoreParty.ToString();
-        textKM.text = "KM: " + kilometersString;
+            //Imprimir en el texto
+            textScore.text = "SCORE: " + scoreParty.ToString();
+            textKM.text = "KM: " + kilometersString;
+        }
+        
     }
 
 
